@@ -4,11 +4,12 @@ body{
     padding: 0;
     background-color: hsl(185, 75%, 39%);
     overflow: hidden;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
+    align-items: center; */
+    
+    /* width: 100vw;
+    height: 100vh; */
 
     font-family: "Kumbh Sans", sans-serif;
     font-weight: bold;
@@ -21,6 +22,9 @@ body{
     height: 360px;
     border-radius: 15px;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -30,11 +34,13 @@ body{
 
 #top-circle {
     position: absolute;
+
     transform: translate(-50%, -50%);
 }
 #bottom-circle {
     position: absolute;
-    transform: translate(25%, 65%);
+    right: 0;
+    transform: translate(50%, 50%);
 }
 
 #top {
