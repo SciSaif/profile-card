@@ -1,4 +1,5 @@
 body{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     background-color: hsl(185, 75%, 39%);
@@ -6,48 +7,95 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 100vw;
-    min-height: 100vh;
-    /* border: 2px solid red; */
+    width: 100vw;
+    height: 100vh;
+
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: bold;
 }
 
-.card {
+#card {
+    margin: auto;
     background-color: white;
-    width: 350px;
-    height: 380px;
+    width: 320px;
+    height: 360px;
     border-radius: 15px;
     position: absolute;
-    z-index: 1;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
 }
 
 #top-circle {
     position: absolute;
-    /* border: 2px solid black; */
-    right: 50%;
-    bottom: 50%;
+    transform: translate(-50%, -50%);
 }
 #bottom-circle {
-    /* border: 2px solid black; */
     position: absolute;
-    left: 50%;
-    top: 50%;
-    /* transform: translate(50%, 50%); */
+    transform: translate(25%, 65%);
 }
 
 #top {
     width: 100%;
-    height: 140px;
+    height: 120px;
     background-color: hsl(185, 75%, 39%);
+    margin-bottom: 60px;
+    overflow: hidden;
 }
 
 #top-design {
-    /* border: 2px solid black; */
-
+    z-index: -2;
 }
 
 #img {
     position: absolute;
-    bottom: 50%;
     left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -8%);
+    border-radius: 100%;
+    border: 5px solid white;
 }
+
+.big-text {
+    font-size: 20px;
+}
+
+.small-text {
+    font-weight: lighter;
+    font-size: 14px;
+    color: rgb(106,111,129);
+}
+
+#age {
+    font-weight: lighter;
+    margin-left: 5px;
+    color: rgb(106,111,129);
+    
+}
+
+
+#bottom {
+    border-top: 1px solid rgb(210,210,210);
+    position: relative;
+    bottom: 0%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+
+
+
+.bottom-items {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+
+
+
+
